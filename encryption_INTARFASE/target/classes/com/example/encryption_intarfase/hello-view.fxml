@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.encryption_intarfase.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Start_Change" layoutX="269.0" layoutY="425.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="262.0" style="-fx-background-color: #9932CC; -fx-background-radius: 35;" text="НАЧАТЬ ИЗМЕНЕНИЯ" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <GaussianBlur />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="User_Path_Adress" layoutX="42.0" layoutY="349.0" prefHeight="46.0" prefWidth="716.0" promptText="Путь к файлу для приминения изменений (только ТХТ формат)" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="Cambria Italic" size="23.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="Rashifrovka" layoutX="42.0" layoutY="273.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="270.0" text="РАСШИФРОВКА" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Zashifrovka" layoutX="488.0" layoutY="273.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="270.0" text="ЗАШИФРОВКА" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="33.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ReadMe!!__1-&gt;Выбираем одним щелчком расшифровку или зашифровку__2-&gt;Узнаем путь файла(ФАЙЛ_ПКМ_СВОЙСТВА_БЕЗОПАСНОСТЬ) и вставляем в поле для адреса и НАЖИМАЕМ ENTER!__3-&gt; Нажимаем на кнопку НАЧАТЬ ИЗМЕНЕНИЯ__ОБРАТИТЕ ВНИМАНИЕ ЗАШИФРОВАНЫЙ ФАЙЛ ЗАПРЕЩЕНО РЕДАКТИРОВАТЬ ВО ИЗБИЖАНИИ ПОТЕРИ КЛЮЧЕЙ К РАСШИФРОВКЕ" wrappingWidth="643.13671875">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9342105388641357" green="0.29842835664749146" blue="0.29842835664749146" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="ReSULT_OPERATION_GET_USER" fill="#e8153c" layoutX="14.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ТУТ БУДЕТ РЕЗУЛЬТАТ ОПЕРАЦИИ..." wrappingWidth="282.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
